@@ -14,6 +14,14 @@ db.once("open", function(){
   //if you get the "open" message, the connection was successful
 })
 
+//schema + model
 var Schema = mongoose.Schema
 
-var newArticle = new Article({name:"", title:"", url:""})
+var articleSchema = new Schema({
+    name:String,
+    title:String,
+    url:String,
+    date:String
+  });
+
+var Article = mongoose.model("Article", articleSchema);
