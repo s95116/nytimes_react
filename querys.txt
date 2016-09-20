@@ -1,0 +1,3 @@
+db.articles.insert({title: "California Today: Clearing the Air, Without Fossil Fuels", date:"SEPT. 20, 2016", url:"http://www.nytimes.com/2016/09/20/us/california-today-air-pollution-fossil-fuels.html?rref=collection%2Fsectioncollection%2Fus&action=click&contentCollection=us&region=rank&module=package&version=highlights&contentPlacement=2&pgtype=sectionfront&_r=0"})
+
+db.articles.updateOne({url:"http://www.nytimes.com/2016/09/20/us/california-today-air-pollution-fossil-fuels.html?rref=collection%2Fsectioncollection%2Fus&action=click&contentCollection=us&region=rank&module=package&version=highlights&contentPlacement=2&pgtype=sectionfront&_r=0"},{$set:{url: "http://www.nytimes.com/2016/09/20/us/california-today-air-pollution-fossil-fuels.html"}})
